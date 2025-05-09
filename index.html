@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>洋宝的道歉信 | 给杰宝的礼物</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                love: {
+                  primary: '#FF4B91',
+                  secondary: '#FFB8D1',
+                  accent: '#FF7EB9',
+                  dark: '#C92C6D',
+                  light: '#FFF0F5',
+                  ultralight: '#FFF8FA'
+                }
+              },
+              fontFamily: {
+                inter: ['Inter', 'sans-serif'],
+                dancing: ['"Dancing Script"', 'cursive']
+              },
+              animation: {
+                'float-slow': 'float 6s ease-in-out infinite',
+                'float-medium': 'float 4s ease-in-out infinite',
+                'heartbeat-slow': 'heartbeat 2s ease-in-out infinite',
+                'fade-in': 'fadeIn 0.5s ease-in-out forwards',
+                'slide-up': 'slideUp 0.7s ease-out forwards',
+                'bounce-light': 'bounceLight 2s infinite'
+              },
+              keyframes: {
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' }
+                },
+                heartbeat: {
+                  '0%, 100%': { transform: 'scale(1)' },
+                  '14%': { transform: 'scale(1.1)' },
+                  '28%': { transform: 'scale(1)' },
+                  '42%': { transform: 'scale(1.1)' },
+                  '70%': { transform: 'scale(1)' }
+                },
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' }
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' }
+                },
+                bounceLight: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-5px)' }
+                }
+              }
+            },
+          }
+        }
+      </script>
+      <style type="text/tailwindcss">
+        @layer utilities {
+          .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+          }
+          .text-shadow-lg {
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+          }
+          .bg-gradient-love {
+            background: linear-gradient(135deg, #FF4B91 0%, #FFB8D1 100%);
+          }
+          .bg-pattern {
+            background-image: radial-gradient(#FF4B91 0.5px, transparent 0.5px), radial-gradient(#FF4B91 0.5px, #FFE6F2 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+          }
+          .bg-heart-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff4b91' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M36 3c-.7 0-1.3.2-1.8.5-.4.4-.7 1-.7 1.6 0 .3 0 .5.1.7l.8 2.3c.2.6.3 1.2.3 1.9 0 .7-.1 1.4-.3 2l-.8 2.4c-.1.2-.2.4-.3.6-.1.2-.2.4-.4.6-.1.2-.3.3-.4.5-.1.2-.2.4-.4.5-.1.1-.2.3-.4.4-.1.1-.3.2-.4.3-.1.1-.2.3-.4.3-.1.1-.3-.1-.5-.2-.2 0-.4-.1-.5-.2-.2-.1-.3-.2-.5-.3-.1-.1-.3-.2-.4-.3-.1-.1-.3-.3-.4-.4-.1-.2-.3-.3-.4-.5-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.3-.6l-.8-2.4c-.2-.6-.3-1.3-.3-2 0-.7.1-1.3.3-1.9l.8-2.3c.1-.2.1-.4.1-.7 0-.6-.3-1.2-.7-1.6-.5-.3-1.1-.5-1.8-.5-2.2 0-4 1.8-4 4s1.8 4 4 4c.7 0 1.3-.2 1.8-.5.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7l-.8-2.3c-.2-.6-.3-1.2-.3-1.9 0-.7.1-1.4-.3-2l.8-2.4c-.1-.2-.2-.4-.3-.6-.1-.2-.2-.4-.4-.6-.1-.2-.3-.3-.4-.5-.1-.2-.2-.4-.4-.5-.1-.1-.2-.3-.4-.4-.1-.1-.3-.2-.4-.3-.1-.1-.2-.3-.4-.3-.1-.1-.3-.2-.5-.2.2 0 .4.1.5.2.2.1.3.2.5.3.1.1.3.2.4.3.1.1.3.3.4.4.1.2.3.3.4.5.1.2.2.3.3.5.1.2.2.4.3.6.1.2.2.4.3.6l.8 2.4c.2.6.3 1.3.3 2 0 .7-.1 1.3-.3 1.9l-.8 2.3c-.1.2-.1.4-.1.7 0 .6.3 1.2.7 1.6.5.3 1.1.5 1.8.5 2.2 0 4-1.8 4-4s-1.8-4-4-4zm0 18c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z'/%3E%3C/g%3E%3C/svg%3E");
+          }
+          .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+          }
+          .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+          }
+          .heart-beat {
+            animation: heartBeat 1.5s ease-in-out infinite;
+          }
+          @keyframes heartBeat {
+            0% { transform: scale(1); }
+            14% { transform: scale(1.1); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.1); }
+            70% { transform: scale(1); }
+          }
+          .hover-scale {
+            transition: transform 0.3s ease;
+          }
+          .hover-scale:hover {
+            transform: scale(1.05);
+          }
+          .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(to right, #FF4B91, #C92C6D);
+          }
+          .bg-blur {
+            backdrop-blur: 8px;
+          }
+          .animate-shake {
+            animation: shake 0.5s;
+          }
+          @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+            20%, 40%, 60%, 80% { transform: translateX(5px); }
+          }
+        }
+      </style>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body class="font-inter bg-love-ultralight min-h-screen overflow-x-hidden scrollbar-hide">
+      <!-- 主容器 -->
+      <div id="app">
+        <!-- 笑话页面 -->
+        <section id="jokePage" class="min-h-screen flex flex-col items-center justify-center px-4 py-8 relative overflow-hidden bg-heart-pattern">
+          <div class="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
+          
+          <!-- 装饰爱心 -->
+          <div class="absolute top-10 left-10 text-love-primary opacity-20 text-5xl animate-float-slow">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="absolute bottom-10 right-10 text-love-primary opacity-20 text-5xl animate-float-medium">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="absolute top-1/3 right-1/4 text-love-primary opacity-10 text-7xl animate-float-slow" style="animation-delay: 1s;">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          
+          <!-- 标题 -->
+          <div class="text-center mb-8 z-10 animate-slide-up" style="animation-delay: 0.3s;">
+            <h2 class="text-[clamp(1.8rem,5vw,2.5rem)] font-dancing font-bold text-gradient mb-2">洋宝的笑话集</h2>
+            <p class="text-love-dark max-w-2xl mx-auto text-shadow">先笑一笑，烦恼都忘掉~</p>
+          </div>
+          
+          <!-- 笑话容器 -->
+          <div class="w-full max-w-2xl bg-white/90 rounded-2xl shadow-xl p-6 md:p-8 z-10 transform transition-all duration-500 hover:shadow-2xl animate-slide-up" style="animation-delay: 0.6s;">
+            <div class="flex justify-center mb-4">
+              <div class="w-16 h-1 bg-love-primary rounded-full"></div>
+            </div>
+            <div id="joke" class="text-xl md:text-2xl font-medium text-love-dark mb-6 text-center min-h-[120px] flex items-center justify-center"></div>
+            
+            <div class="text-center">
+              <button id="nextJokeBtn" class="px-6 py-3 bg-gradient-love hover:shadow-lg text-white rounded-full text-sm font-medium shadow transition-all duration-300 hover-scale">
+                下一个笑话 <i class="fa-solid fa-arrow-right ml-2"></i>
+              </button>
+            </div>
+          </div>
+          
+          <!-- 继续按钮 -->
+          <div class="mt-8 z-10 animate-slide-up" style="animation-delay: 0.9s;">
+            <button id="jokeContinueBtn" class="px-8 py-4 bg-gradient-love hover:shadow-lg text-white rounded-full text-lg font-semibold shadow-lg transition-all duration-300 hover-scale opacity-50 cursor-not-allowed">
+              笑话讲完了，进入正题 <i class="fa-solid fa-heart ml-2"></i>
+            </button>
+          </div>
+        </section>
+
+        <!-- 开始页面 -->
+        <section id="startPage" class="min-h-screen flex flex-col items-center justify-center px-4 py-8 relative overflow-hidden bg-heart-pattern hidden">
+          <div class="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
+          
+          <!-- 装饰爱心 -->
+          <div class="absolute top-10 left-10 text-love-primary opacity-20 text-5xl animate-float-slow">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="absolute bottom-10 right-10 text-love-primary opacity-20 text-5xl animate-float-medium">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="absolute top-1/3 right-1/4 text-love-primary opacity-10 text-7xl animate-float-slow" style="animation-delay: 1s;">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          
+          <!-- 标题 -->
+          <div class="text-center mb-12 z-10 animate-slide-up" style="animation-delay: 0.3s;">
+            <h1 class="text-[clamp(2.5rem,8vw,4rem)] font-dancing font-bold text-gradient mb-4">亲爱的杰宝</h1>
+            <p class="text-[clamp(1.2rem,4vw,1.8rem)] text-love-dark max-w-2xl mx-auto text-shadow">我有一些心里话想对你说...</p>
+          </div>
+          
+          <!-- 礼物盒 -->
+          <div class="z-10 mb-12 relative animate-slide-up" style="animation-delay: 0.6s;">
+            <div class="w-64 h-64 md:w-80 md:h-80 relative cursor-pointer" id="giftBox">
+              <!-- 礼物盒底部 -->
+              <div class="absolute inset-0 bg-gradient-love rounded-lg shadow-xl overflow-hidden transform transition-all duration-500 hover:shadow-2xl">
+                <!-- 装饰线 -->
+                <div class="absolute top-1/2 left-0 w-full h-1/4 bg-love-dark"></div>
+                <div class="absolute left-1/2 top-0 w-1/4 h-full bg-love-dark"></div>
+              </div>
+              
+              <!-- 礼物盒盖子 -->
+              <div id="giftLid" class="absolute top-0 left-0 w-full h-1/4 bg-love-dark rounded-t-lg shadow-lg transition-transform duration-500 origin-top">
+                <!-- 丝带 -->
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16">
+                  <div class="w-full h-full relative">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-4 h-12 bg-love-accent rounded-full"></div>
+                    <div class="absolute top-1/2 left-0 transform -translate-y-1/2 w-12 h-4 bg-love-accent rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 开始按钮 -->
+          <button id="startBtn" class="px-8 py-4 bg-gradient-love hover:shadow-lg text-white rounded-full text-lg font-semibold shadow-lg transition-all duration-300 hover-scale animate-pulse-slow z-10">
+            打开礼物 <i class="fa-solid fa-gift ml-2"></i>
+          </button>
+        </section>
+
+        <!-- 问答页面 -->
+        <section id="quizPage" class="min-h-screen flex flex-col items-center justify-center px-4 py-8 relative overflow-hidden bg-heart-pattern hidden">
+          <div class="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
+          
+          <!-- 装饰爱心 -->
+          <div class="absolute top-10 left-10 text-love-primary opacity-20 text-5xl animate-float-slow">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="absolute bottom-10 right-10 text-love-primary opacity-20 text-5xl animate-float-medium">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="absolute top-1/3 right-1/4 text-love-primary opacity-10 text-7xl animate-float-slow" style="animation-delay: 1s;">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          
+          <!-- 标题 -->
+          <div class="text-center mb-8 z-10 animate-slide-up" style="animation-delay: 0.3s;">
+            <h2 class="text-[clamp(1.8rem,5vw,2.5rem)] font-dancing font-bold text-gradient mb-2">我们的回忆</h2>
+            <p class="text-love-dark max-w-2xl mx-auto text-shadow">回答下面的问题，找回我们的甜蜜回忆</p>
+          </div>
+          
+          <!-- 问题容器 -->
+          <div id="quizContainer" class="w-full max-w-2xl bg-white/90 rounded-2xl shadow-xl p-6 md:p-8 z-10 transform transition-all duration-500 hover:shadow-2xl animate-slide-up" style="animation-delay: 0.6s;">
+            <div class="flex justify-center mb-4">
+              <div class="w-16 h-1 bg-love-primary rounded-full"></div>
+            </div>
+            <div id="question" class="text-xl md:text-2xl font-medium text-love-dark mb-6 text-center"></div>
+            
+            <div id="options" class="space-y-3 mb-8"></div>
+            
+            <div class="flex justify-between">
+              <button id="prevBtn" class="px-6 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full text-sm font-medium shadow transition-all duration-300 opacity-50 cursor-not-allowed hover-scale">
+                上一题 <i class="fa-solid fa-arrow-left ml-1"></i>
+              </button>
+              <button id="nextBtn" class="px-6 py-2 bg-gradient-love hover:shadow-lg text-white rounded-full text-sm font-medium shadow transition-all duration-300 hover-scale">
+                下一题 <i class="fa-solid fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+          
+          <!-- 进度条 -->
+          <div class="w-full max-w-2xl mt-6 z-10 animate-slide-up" style="animation-delay: 0.9s;">
+            <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
+              <div id="progressBar" class="h-full bg-gradient-love rounded-full transition-all duration-500" style="width: 0%"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 表白页面 -->
+        <section id="confessionPage" class="min-h-screen flex flex-col items-center justify-center px-4 py-8 relative overflow-hidden bg-heart-pattern hidden">
+          <div class="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
+          
+          <!-- 装饰爱心 -->
+          <div class="absolute top-10 left-10 text-love-primary opacity-20 text-5xl animate-float-slow">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="absolute bottom-10 right-10 text-love-primary opacity-20 text-5xl animate-float-medium">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="absolute top-1/3 right-1/4 text-love-primary opacity-10 text-7xl animate-float-slow" style="animation-delay: 1s;">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          
+          <!-- 标题 -->
+          <div class="text-center mb-8 z-10 animate-slide-up" style="animation-delay: 0.3s;">
+            <h2 class="text-[clamp(1.8rem,5vw,2.5rem)] font-dancing font-bold text-gradient mb-2">洋宝的心里话</h2>
+          </div>
+          
+          <!-- 信笺容器 -->
+          <div class="w-full max-w-2xl bg-white/90 rounded-2xl shadow-xl overflow-hidden z-10 transform transition-all duration-500 hover:shadow-2xl animate-slide-up" style="animation-delay: 0.6s;">
+            <!-- 信纸顶部装饰 -->
+            <div class="h-4 bg-gradient-to-r from-love-primary to-love-accent"></div>
+            
+            <!-- 信纸内容 -->
+            <div class="p-6 md:p-8">
+              <div id="letterContent" class="space-y-4 text-gray-700 leading-relaxed">
+                <p class="opacity-0 transition-opacity duration-500 delay-100">亲爱的杰宝：</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-300">这几天没有你的消息，我的心里空落落的。</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-500">分开的这几天，你不理我的这几天，我从开始的焦躁、不安、生气到现在平静，偶尔悲伤，还好，我还算坚强，你不必过于担心。</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-700">直到那天，你对我说了几句狠话，我才意识到，原来语言可以这么伤人。</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-900">原来我一直在伤害你。</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-1100">我居然在伤害我最爱的人！我最想保护的人！我想相守一生的人！</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-1300">你看，你才对我说了统共不过五句狠话，我就那么难受。而之前，我说了那么多，那么多，你该多难受啊。</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-1500">大抵是被喜欢的总是有恃无恐，所以对你肆无忌惮，越发猖狂，不断消耗你对的爱意。</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-1700">比起对你的伤害，道歉也显得无比苍白。</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-1900">我越平静，越清醒，越不知所措，只能强装镇定。</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-2100">我们是爱人，是恋人，应该是世上最亲密的人，应该一起温暖对方，开心时一起开心，悲伤时抱抱彼此。分开时，互相努力，打拼，奋斗；相聚时，给予对方快乐。</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-2300">而我的任性，搞砸了这一切。</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-2500">你给我告白的那天，阳光很好，你穿着白色T恤，对我笑的腼腆又真诚，我永远都忘不了。</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-2700">第一次牵手，我们在项目部外面走了一大圈，直到夜色降临，黄昏笼罩大地，也不想分开。你紧紧地握着我的手，我能感受到你的紧张和心跳，那是我最幸福的时刻。</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-2900">和你在一起的每一天我都很开心，你包容我的小脾气，宠着我，爱护我。</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-3100">是我不懂珍惜，伤害了最爱我的你。</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-3300">我知道道歉可能不够，但我还是想真诚地对你说一声：对不起，请原谅我好吗？</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-3500">我会努力改正自己的缺点，学会控制情绪，不再说伤人的话。我希望我们能一直走下去，未来的每一天都有彼此陪伴，走到婚姻的殿堂，直到你我都头发花白，步履蹒跚，成为老头老太太。</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-3700">人生不过三万天，每过去一天，就少一天。我们还处于异地状态，每年相见的日子屈指可数，更应好好珍惜。对吗？</p>
+                <p class="opacity-0 transition-opacity duration-500 delay-3900 mt-6 font-dancing text-love-primary text-xl">永远爱你的洋宝</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 按钮 -->
+          <div class="mt-8 z-10 animate-slide-up" style="animation-delay: 0.9s;">
+            <button id="continueBtn" class="px-8 py-4 bg-gradient-love hover:shadow-lg text-white rounded-full text-lg font-semibold shadow-lg transition-all duration-300 hover-scale">
+              继续 <i class="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+          </div>
+        </section>
+
+        <!-- 最后页面 -->
+        <section id="finalPage" class="min-h-screen flex flex-col items-center justify-center px-4 py-8 relative overflow-hidden bg-heart-pattern hidden">
+          <div class="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
+          
+          <!-- 标题 -->
+          <div class="text-center mb-8 z-10 animate-slide-up" style="animation-delay: 0.3s;">
+            <h2 class="text-[clamp(2rem,6vw,3rem)] font-dancing font-bold text-gradient mb-4">杰宝，我错了</h2>
+            <p class="text-love-dark max-w-2xl mx-auto text-shadow">希望你能原谅我，回到我身边</p>
+          </div>
+          
+          <!-- 大爱心 -->
+          <div class="z-10 mb-10 animate-float">
+            <div class="heart text-[clamp(8rem,25vw,15rem)] text-love-primary animate-heartbeat-slow">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          
+          <!-- 选项按钮 -->
+          <div class="flex flex-col sm:flex-row gap-4 z-10 animate-slide-up" style="animation-delay: 0.6s;">
+            <button id="acceptBtn" class="px-8 py-4 bg-gradient-love hover:shadow-lg text-white rounded-full text-lg font-semibold shadow-lg transition-all duration-300 hover-scale">
+              原谅你了 <i class="fa-solid fa-heart ml-2"></i>
+            </button>
+            <button id="rejectBtn" class="px-8 py-4 bg-gray-300 text-gray-500 rounded-full text-lg font-semibold shadow-lg cursor-not-allowed opacity-70">
+              再考虑一下 <i class="fa-solid fa-clock ml-2"></i>
+            </button>
+          </div>
+          
+          <!-- 底部文字 -->
+          <div class="mt-12 text-center z-10 animate-slide-up" style="animation-delay: 0.9s;">
+            <p class="text-gray-600">无论结果如何，我都会一直爱你</p>
+          </div>
+        </section>
+
+        <!-- 原谅后弹窗 -->
+        <div id="acceptModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm hidden">
+          <div class="bg-white rounded-2xl shadow-2xl p-6 md:p-8 max-w-md w-full transform transition-all duration-500 scale-95 opacity-0" id="modalContent">
+            <div class="text-center">
+              <div class="w-20 h-20 mx-auto mb-4 bg-gradient-love rounded-full flex items-center justify-center animate-float">
+                <i class="fa-solid fa-heart text-white text-3xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-love-primary mb-2">杰宝原谅你啦！</h3>
+              <p class="text-gray-600 mb-6">他说他也离不开你，你们会一直幸福下去~</p>
+              <button id="closeModalBtn" class="px-6 py-3 bg-gradient-love hover:shadow-lg text-white rounded-full font-medium shadow transition-all duration-300 hover-scale">
+                拥抱幸福 <i class="fa-solid fa-heart ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        // 新的笑话数据
+        const jokes = [
+          "我最近越来越喜欢数学了，知道为什么吗？因为我的心里只有你一个未知数。",
+          "我以前觉得钱最重要，直到我遇到了你，才发现原来你是我的命。",
+          "我最近发现，我的手也有点问题，每次看到你，我都会不自觉地想牵你的手。",
+          "今天看到一只小狗，觉得跟你很像。因为它跟你一样讨厌我",
+          "我的心脏好像也有点问题，每次想到你，就不受控制加速跳动。"
+        ];
+        
+        // 问题数据
+        const questions = [
+          {
+            question: "我们第一次约会去了哪里？",
+            options: ["电影院", "公园", "餐厅", "咖啡厅"],
+            answer: "咖啡厅"
+          },
+          {
+            question: "我最喜欢你叫我什么？",
+            options: ["宝宝", "洋宝", "亲爱的", "宝贝"],
+            answer: "洋宝"
+          },
+          {
+            question: "我的生日是哪一天？",
+            options: ["1月1日", "10月25日", "8月15日", "12月25日"],
+            answer: "10月25日"
+          },
+          {
+            question: "我们第一次牵手是在什么时候？",
+            options: ["约会时", "看电影时", "项目部散步时", "吃饭时"],
+            answer: "项目部散步时"
+          },
+          {
+            question: "我最喜欢的颜色是什么？",
+            options: ["红色", "蓝色", "粉色", "紫色"],
+            answer: "粉色"
+          }
+        ];
+        
+        // 当前问题索引
+        let currentQuestion = 0;
+        // 当前笑话索引
+        let currentJoke = 0;
+        
+        // DOM元素
+        const app = document.getElementById('app');
+        const jokePage = document.getElementById('jokePage');
+        const startPage = document.getElementById('startPage');
+        const quizPage = document.getElementById('quizPage');
+        const confessionPage = document.getElementById('confessionPage');
+        const finalPage = document.getElementById('finalPage');
+        const acceptModal = document.getElementById('acceptModal');
+        const modalContent = document.getElementById('modalContent');
+        
+        const joke = document.getElementById('joke');
+        const nextJokeBtn = document.getElementById('nextJokeBtn');
+        const jokeContinueBtn = document.getElementById('jokeContinueBtn');
+        
+        const giftBox = document.getElementById('giftBox');
+        const giftLid = document.getElementById('giftLid');
+        const startBtn = document.getElementById('startBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const continueBtn = document.getElementById('continueBtn');
+        const acceptBtn = document.getElementById('acceptBtn');
+        const rejectBtn = document.getElementById('rejectBtn');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        
+        const questionEl = document.getElementById('question');
+        const optionsEl = document.getElementById('options');
+        const progressBar = document.getElementById('progressBar');
+        const letterContent = document.getElementById('letterContent');
+        
+        // 页面加载完成后直接显示笑话页面
+        window.addEventListener('load', () => {
+          jokePage.classList.remove('hidden');
+          loadJoke();
+        });
+        
+        // 加载笑话
+        function loadJoke() {
+          joke.textContent = jokes[currentJoke];
+          
+          // 如果是最后一个笑话，启用继续按钮
+          if (currentJoke === jokes.length - 1) {
+            jokeContinueBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            jokeContinueBtn.classList.add('animate-pulse');
+          }
+        }
+        
+        // 下一个笑话
+        nextJokeBtn.addEventListener('click', () => {
+          if (currentJoke < jokes.length - 1) {
+            currentJoke++;
+            loadJoke();
+            
+            // 添加笑话切换动画
+            joke.classList.add('animate-shake');
+            setTimeout(() => {
+              joke.classList.remove('animate-shake');
+            }, 500);
+          }
+        });
+        
+        // 笑话页面继续按钮
+        jokeContinueBtn.addEventListener('click', () => {
+          jokePage.classList.add('hidden');
+          startPage.classList.remove('hidden');
+          
+          // 添加页面切换动画
+          startPage.classList.add('animate-fade-in');
+        });
+        
+        // 礼物盒动画
+        startBtn.addEventListener('click', () => {
+          // 打开礼物盒盖子
+          giftLid.style.transform = 'rotateX(-110deg) translateY(-10px)';
+          
+          // 延迟显示下一个页面
+          setTimeout(() => {
+            startPage.classList.add('hidden');
+            quizPage.classList.remove('hidden');
+            loadQuestion();
+          }, 1000);
+        });
+        
+        // 加载问题
+        function loadQuestion() {
+          const question = questions[currentQuestion];
+          questionEl.textContent = question.question;
+          
+          // 清空选项
+          optionsEl.innerHTML = '';
+          
+          // 添加选项
+          question.options.forEach(option => {
+            const button = document.createElement('button');
+            button.className = 'w-full py-3 px-4 rounded-lg border-2 border-gray-200 text-left hover:border-love-primary hover:bg-love-light transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-love-primary focus:ring-opacity-50';
+            button.textContent = option;
+            
+            button.addEventListener('click', () => {
+              // 移除所有选项的选中状态
+              document.querySelectorAll('#options button').forEach(btn => {
+                btn.classList.remove('border-love-primary', 'bg-love-light');
+                btn.classList.add('border-gray-200');
+              });
+              
+              // 添加当前选项的选中状态
+              button.classList.remove('border-gray-200');
+              button.classList.add('border-love-primary', 'bg-love-light');
+              
+              // 存储用户选择
+              button.dataset.selected = 'true';
+            });
+            
+            optionsEl.appendChild(button);
+          });
+          
+          // 更新进度条
+          progressBar.style.width = `${((currentQuestion + 1) / questions.length) * 100}%`;
+          
+          // 更新按钮状态
+          if (currentQuestion === 0) {
+            prevBtn.classList.add('opacity-50', 'cursor-not-allowed');
+          } else {
+            prevBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+          }
+          
+          if (currentQuestion === questions.length - 1) {
+            nextBtn.textContent = '完成';
+          } else {
+            nextBtn.textContent = '下一题';
+          }
+        }
+        
+        // 上一题
+        prevBtn.addEventListener('click', () => {
+          if (currentQuestion > 0) {
+            currentQuestion--;
+            loadQuestion();
+          }
+        });
+        
+        // 下一题
+        nextBtn.addEventListener('click', () => {
+          // 检查是否有选中的选项
+          const selectedOption = document.querySelector('#options button[data-selected="true"]');
+          
+          if (!selectedOption) {
+            // 没有选择任何选项，抖动提示
+            optionsEl.classList.add('animate-shake');
+            setTimeout(() => {
+              optionsEl.classList.remove('animate-shake');
+            }, 500);
+            return;
+          }
+          
+          if (currentQuestion < questions.length - 1) {
+            currentQuestion++;
+            loadQuestion();
+          } else {
+            // 完成所有问题，显示表白页面
+            quizPage.classList.add('hidden');
+            confessionPage.classList.remove('hidden');
+            
+            // 显示表白内容
+            setTimeout(() => {
+              const paragraphs = letterContent.querySelectorAll('p');
+              paragraphs.forEach((p, index) => {
+                setTimeout(() => {
+                  p.style.opacity = '1';
+                }, index * 200);
+              });
+            }, 500);
+          }
+        });
+        
+        // 继续按钮
+        continueBtn.addEventListener('click', () => {
+          confessionPage.classList.add('hidden');
+          finalPage.classList.remove('hidden');
+        });
+        
+        // 接受按钮
+        acceptBtn.addEventListener('click', () => {
+          acceptModal.classList.remove('hidden');
+          
+          // 添加弹窗动画
+          setTimeout(() => {
+            modalContent.style.transform = 'scale(1)';
+            modalContent.style.opacity = '1';
+          }, 100);
+        });
+        
+        // 关闭弹窗按钮
+        closeModalBtn.addEventListener('click', () => {
+          // 添加弹窗关闭动画
+          modalContent.style.transform = 'scale(0.95)';
+          modalContent.style.opacity = '0';
+          
+          setTimeout(() => {
+            acceptModal.classList.add('hidden');
+          }, 300);
+        });
+        
+        // 拒绝按钮（禁用状态）
+        rejectBtn.addEventListener('click', () => {
+          // 显示提示
+          alert('再给我一次机会嘛~');
+        });
+      </script>
+    </body>
+    </html>
+  
